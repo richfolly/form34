@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Wizard-v6</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- datepicker -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div class="page-content">
+		<div class="wizard-heading">Welcome to Nomadic Systems Enrollment</div>	
+		<div class="wizard-v6-content">
+			<div class="wizard-form">
+		        <form class="form-register" id="form-register" action="send.php" method="post">
+		        	<div id="form-total">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<p class="step-icon"><span>1</span></p>
+			            	<span class="step-text">Business Information</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="form-heading">
+			                		<h3>Please complete the partner enrollment form:</h3>
+			                		<span>1/2</span>
+			                	</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="first_name" name="first_name" required>
+											<span class="label">Legal Name:</span>
+										</label>
+									</div>
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="last_name" name="last_name" required>
+											<span class="label">DBA Name:</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="City" name="City" required>
+											<span class="label">City</span>
+										</label>
+									</div>
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="State" name="State" required>
+											<span class="label">State</span>
+										</label>
+									</div>
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" name="Zip" id="Zip" class="form-control"  required>
+											<span class="label">Zip</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="Tax" name="Tax" required>
+											<span class="label">Federal Tax ID:</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="Website" name="Website" required>
+											<span class="label">Website:</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="room" class="special-label-1">Ownership Type:</label>
+										<select name="Ownership" id="Ownership" class="form-control">
+											<option value="Daily Design Metting - Metting Room No.1" selected>Select</option>
+											<option value="Single">Not for Profit</option>
+											<option value="Single">Corporation, LLC</option>
+											<option value="Double">Sole Prop</option>
+											<option value="Double"></option>
+										</select>
+										<span class="select-btn">
+											<i class="zmdi zmdi-chevron-down"></i>
+										</span>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="day" class="special-label-1">Organization Day</label>
+										<input type="text" name="day" class="day" id="day" placeholder="15 / 08 / 2018">
+									</div>
+								</div>
+							</div>
+			            </section>
+	
+						<!-- SECTION 2 -->
+			            <h2>
+			            	<p class="step-icon"><span>2</span></p>
+			            	<span class="step-text">Owner or Responsible</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="form-heading">
+			                		<h3>Owner or Responsible Party</h3>
+			                		<span>2/2</span>
+			                	</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="first_name" name="first_name" required>
+											<span class="label">First Name:</span>
+										</label>
+									</div>
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="last_name" name="last_name" required>
+											<span class="label">Last Name:</span>
+										</label>
+									</div>
+								</div>
+								
+								<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="SSN" name="SSN" required>
+											<span class="label">Last 4 digits of SSN (used to confirm identity):</span>
+										</label>
+									</div>
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="last_name" name="last_name" required>
+											<span class="label">Email address: </span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="phone" name="phone" required>
+											<span class="label">City</span>
+										</label>
+									</div>
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="phone" name="phone" required>
+											<span class="label">State</span>
+										</label>
+									</div>
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" name="your_email_1" id="your_email_1" class="form-control"  required>
+											<span class="label">Zip</span>
+										</label>
+									</div>
+								</div>
+							</div>
+			            </section>
+			            <!-- SECTION 3 -->
+			            
+		        	</div>
+		        </form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
