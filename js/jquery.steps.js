@@ -301,8 +301,8 @@ function finishStep(wizard, state)
         data:{first_name,last_name,City,State,Zip,Tax,Website,Ownership,day,first_name_2,last_name_2,SSN,email,city_2,state_2,your_email_1},
         success: function(data){
             console.log(data);
-            // alert('Data sent successfully!');
-            // window.location.reload();
+            alert('Data sent successfully!');
+            window.location.reload();
         }
     })
 
