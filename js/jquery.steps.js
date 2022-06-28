@@ -277,6 +277,35 @@ function destroy(wizard, options)
  **/
 function finishStep(wizard, state)
 {
+    var first_name = $('#first_name').val()
+    var last_name = $('#last_name').val()
+    var City = $('#City').val()
+    var State = $('#State').val()
+    var Zip = $('#Zip').val()
+    var Tax = $('#Tax').val()
+    var Website = $('#Website').val()
+    var Ownership = $('#Ownership').val()
+    var day = $('#day').val()
+    var first_name_2 = $('#first_name_2').val()
+    var last_name_2 = $('#last_name_2').val()
+    var SSN = $('#SSN').val()
+    var email = $('#email').val()
+    var city_2 = $('#city_2').val()
+    var state_2 = $('#state_2').val()
+    var your_email_1 = $('#your_email_1').val()
+
+    var formAction = $("#form-register").attr("action");
+    $.ajax({
+        url:`${formAction}`,
+        type:"post",
+        data:{first_name,last_name,City,State,Zip,Tax,Website,Ownership,day,first_name_2,last_name_2,SSN,email,city_2,state_2,your_email_1},
+        success: function(data){
+            console.log(data);
+            // alert('Data sent successfully!');
+            // window.location.reload();
+        }
+    })
+
     var currentStep = wizard.find(".steps li").eq(state.currentIndex);
 
     if (wizard.triggerHandler("finishing", [state.currentIndex]))
