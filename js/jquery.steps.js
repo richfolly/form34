@@ -829,8 +829,9 @@ function paginationClickHandler(event)
         case "next":
             if ($('#first_name').val() == "") {
                 $('#first_name').css('border-color','#ff0000')
+            }else{
+                goToNextStep(wizard, options, state);
             }
-            // goToNextStep(wizard, options, state);
             break;
 
         case "previous":
