@@ -823,7 +823,11 @@ function paginationClickHandler(event)
             break;
 
         case "finish":
-            finishStep(wizard, state);
+            if ($('#SSN').val() == "") {
+                $('#SSN').css('border-color','#ff0000')
+            }else{
+                finishStep(wizard, state);
+            }
             break;
 
         case "next":
